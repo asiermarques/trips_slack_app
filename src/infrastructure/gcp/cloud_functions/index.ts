@@ -5,7 +5,7 @@ import type {
 } from '@google-cloud/functions-framework/build/src/functions';
 import CommandController from '../../controllers/CommandController';
 import {queryHandler} from './queryHandler';
-import {HttpError} from './../../errors';
+import {HttpError} from '../../errors';
 import {fold, tryCatch, chain} from 'fp-ts/lib/Either';
 import {pipe} from 'fp-ts/function';
 

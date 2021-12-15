@@ -1,5 +1,5 @@
 import {NotFoundError} from '../../../../src/infrastructure/errors';
-import {executeController} from '../../../../src/infrastructure/gcp/cloud_functions/index';
+import {executeController} from '../../../../src/infrastructure/gcp/cloud_functions';
 import {left, isLeft} from 'fp-ts/lib/Either';
 
 describe('the executeController should result with the right result or an error', () => {

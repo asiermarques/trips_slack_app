@@ -3,7 +3,7 @@ import {
   NotFoundError,
   BadRequestError,
 } from '../../../../src/infrastructure/errors';
-import {processErrorResponse} from '../../../../src/infrastructure/gcp/cloud_functions/index';
+import {processErrorResponse} from '../../../../src/infrastructure/gcp/cloud_functions';
 import {mock} from 'jest-mock-extended';
 
 describe('the processErrorResponse sends the right error response', () => {

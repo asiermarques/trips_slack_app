@@ -4,14 +4,14 @@ import {right, Either} from 'fp-ts/lib/Either';
 
 export default (
   user: User,
-  cityname: string,
+  cityName: string,
   country: Country
 ): Either<Error, User> =>
   right({
     id: user.id,
     username: user.username,
     homeLocation: {
-      cityname: cityname,
+      cityName: cityName,
       country: country,
     },
   });
